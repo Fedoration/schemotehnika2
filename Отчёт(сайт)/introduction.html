@@ -5,30 +5,30 @@
 <script language="JavaScript">
 <!--
 var num1 = 1
-gran1 = 2
+gran1 = 3
 function a1() 
 //{ alert( num );
-{ document.pic1.src="phot_intro/intro_sync/"+ num1 +".jpg" ;}
+{ document.pic1.src="intro_subtrschet/"+ num1 +".jpg" ;}
 //-->
 </script>
 
 <script language="JavaScript">
 <!--
 var num = 1
-gran = 2
+gran = 3
 function a() 
 //{ alert( num );
-{ document.pic.src="phot_intro/intro_async_jk/"+ num +".jpg" ;}
+{ document.pic.src="intro_sumschet/"+ num +".jpg" ;}
 //-->
 </script>
 
 <script language="JavaScript">
 <!--
 var num2 = 1
-gran2 = 2
+gran2 = 3
 function a2() 
 //{ alert( num );
-{ document.pic2.src="phot_intro/intro_async_jk/"+ num2 +".jpg" ;}
+{ document.pic2.src="intro_deshif/"+ num2 +".jpg" ;}
 //-->
 </script>
 
@@ -38,7 +38,7 @@ var num3 = 1
 gran3 = 2
 function a3() 
 //{ alert( num );
-{ document.pic3.src="phot_intro/intro_donnotin/"+ num3 +".jpg" ;}
+{ document.pic3.src="intro_multipl/"+ num3 +".jpg" ;}
 //-->
 </script>
 
@@ -61,6 +61,14 @@ function a5()
 { document.pic5.src="phot_intro/intro_donjk/"+ num5 +".jpg" ;}
 //-->
 </script>
+
+<style type="text/css">
+<!--
+a {color: blue; font-size: 22; font-weight: bold; left: 10px; text-decoration: underline}
+a:hover {color: red; font-size: 22; font-weight: bold; left: 10px; text-decoration: underline}
+-->
+</style>
+
 
 <meta charset='windows-1251'>
 <title> Introduction </title>
@@ -88,11 +96,36 @@ function a5()
 <font face="comic sans ms" size=+3 color=Blue>
 <b>Задача 1:</b>
 </font><br></p>
-	<p><font face="comic sans ms" size=+2 color=MidnightBlue>
-Мы собираемся проверить модель прямого счетчика.
+<p align="left"><font face="comic sans ms" size=+2 color=MidnightBlue>
+Из теоретичских материалов нам <u>дано:</u>
+<br>1.схема 4-ёх разрядного суммирующего двоичного счетчика импульсов на Т-триггерах;
+<br>2.диаграмма состояний;
+<br>3.таблица состояний.  
 <br></font></p>
-<img src="schet_pr.jpg">
-
+<table align=center>
+<td valign=top><A HREF="JavaScript: if (num>1) { num=num-1}; a()">
+<img src="L.jpg"></A></td>
+<td>
+<div align="center">
+<A HREF="JavaScript: if (num<gran) { num=num+1}; a()">
+<IMG SRC="intro_sumschet/1.jpg" NAME="pic" BORDER=1 ></a>
+<br>
+</div>
+</td>
+<td valign=top><A HREF="JavaScript: if (num<gran) { num=num+1}; a()">
+<img src="R.jpg"></A></td>
+</table>
+<p align="left"><font face="comic sans ms" size=+2 color=MidnightBlue>
+А теперь нужно <u>показать</u>:
+<br>1.как работает 4-ёх разрядный суммарный счётчик
+<br>2.проверить данные теоретические материалы на практике, с помощью
+построения схемы и снятия результатов.</font></p>
+<p align="left"><font face="comic sans ms" size=+2 color=MidnightBlue>
+<u>Как</u> мы это будем делать:
+<br>1.Для решения задачи воспользуемся компьютерной программой
+<a href="javascript: vv()"> <font size="+2" face="comic sans ms"> 
+Tina</font></a>, в которой построим нашу модель;
+<br>2.подавая различные сигналы на вход, получим набор выходных сигналов, который сопоставим с теоретическим.</font></p>
 
 <br>
 <br>
@@ -103,7 +136,20 @@ function a5()
 	<p><font face="comic sans ms" size=+2 color=MidnightBlue>
 Мы собираемся проверить модель обратного счетчика.
 <br></font></p>
-<img src="schet_obr.jpg">
+<table align=center>
+<td valign=top><A HREF="JavaScript: if (num1>1) { num1=num1-1}; a1()">
+<img src="L.jpg"></A></td>
+<td>
+<div align="center">
+<A HREF="JavaScript: if (num1<gran1) { num1=num1+1}; a1()">
+<IMG SRC="intro_subtrschet/1.jpg" NAME="pic1" BORDER=1 ></a>
+<br>
+</div>
+</td>
+<td valign=top><A HREF="JavaScript: if (num1<gran1) { num1=num1+1}; a1()">
+<img src="R.jpg"></A></td>
+</table>
+
 
 
 <br>
@@ -115,7 +161,19 @@ function a5()
 	<p><font face="comic sans ms" size=+2 color=MidnightBlue>
 Мы собираемся проверить модель дешифратора.
 <br></font></p>
-<img src="deshifr.jpg">
+<table align=center>
+<td valign=top><A HREF="JavaScript: if (num2>1) { num2=num2-1}; a2()">
+<img src="L.jpg"></A></td>
+<td>
+<div align="center">
+<A HREF="JavaScript: if (num2<gran2) { num2=num2+1}; a2()">
+<IMG SRC="intro_deshif/1.jpg" NAME="pic2" BORDER=1 ></a>
+<br>
+</div>
+</td>
+<td valign=top><A HREF="JavaScript: if (num2<gran2) { num2=num2+1}; a2()">
+<img src="R.jpg"></A></td>
+</table>
 
 
 <br>
@@ -127,7 +185,19 @@ function a5()
 	<p><font face="comic sans ms" size=+2 color=MidnightBlue>
 Мы собираемся проверить модель мултиплексора.
 <br></font></p>
-<img src="mutliplekser.jpg">
+<table align=center>
+<td valign=top><A HREF="JavaScript: if (num3>1) { num3=num3-1}; a3()">
+<img src="L.jpg"></A></td>
+<td>
+<div align="center">
+<A HREF="JavaScript: if (num3<gran3) { num3=num3+1}; a3()">
+<IMG SRC="intro_multipl/1.jpg" NAME="pic3" BORDER=1 ></a>
+<br>
+</div>
+</td>
+<td valign=top><A HREF="JavaScript: if (num3<gran3) { num3=num3+1}; a3()">
+<img src="R.jpg"></A></td>
+</table>
 
 </body>
 </html>
