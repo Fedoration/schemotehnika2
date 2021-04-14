@@ -4,10 +4,10 @@
 <script language="JavaScript">
 <!--
 var num = 1
-gran = 9
+gran = 8
 function a() 
 //{ alert( num );
-{ document.pic.src="phot_async_notor/"+ num +".jpg" ;}
+{ document.pic.src="phot_sum_schet/"+ num +".jpg" ;}
 //-->
 </script>
 
@@ -64,29 +64,26 @@ a:hover {color: red; font-size: 22; font-weight: bold; left: 10px; text-decorati
 
 <br>
 <br>
-<p align=left>
-<font face="comic sans ms" size=+3 color=Blue>
-<b>В первом подпункте задачи №1:</b>
-</font><br></p>
-  <p><font face="comic sans ms" size=+2 color=MidnightBlue>
-Мы будем собирать и анализировать работу асинхронного RS-триггера используя логические элементы “ИЛИ-НЕ”
-<br><br></font></p>
-<img src="asyn1.jpg">
+
 <p><font face="comic sans ms" size=+2 color=MidnightBlue>
-Проверим данную теоритическую модели с помощью программы
+Мы будем стоить в программной среде
 <a href="javascript: vv()"> <font size="+2" face="comic sans ms"> 
-Tina</font></a>
+Tina</font></a> схему 4-ёх разрядного суммирующего счётчика и демонстрировать его работу 
 <br><br></font></p>
+<p><font face="comic sans ms" size=+2 color=MidnightBlue>
+Проверим данную теоретическую модель и сопоставим теоретические и полученные результаты
+<br>
+<img src="intro_sumschet/1.jpg"><br></font></p>
 <br>
 <font face="comic sans ms" size=+2 color=MidnightBlue>
 <b>Решение данной задачи имеет следующий вид:</b></font>
 <table align=center>
-<td valign=top><A HREF="JavaScript: if (num>0) { num=num-1}; a()">
+<td valign=top><A HREF="JavaScript: if (num>1) { num=num-1}; a()">
 <img src="L.jpg"></A></td>
 <td>
 <div align="center">
 <A HREF="JavaScript: if (num<gran) { num=num+1}; a()">
-<IMG SRC="phot_async_notor/1.jpg" NAME="pic" BORDER=1 ></a>
+<IMG SRC="phot_sum_schet/1.jpg" NAME="pic" BORDER=1 ></a>
 <br>
 </div>
 </td>
@@ -94,65 +91,6 @@ Tina</font></a>
 <img src="R.jpg"></A></td>
 </table>
 
-<br>
-<br>
-<p align=left>
-<font face="comic sans ms" size=+3 color=Blue>
-<b>Во втором подпункте задачи №1:</b>
-</font><br></p>
-  <p><font face="comic sans ms" size=+2 color=MidnightBlue>
-Мы будем собирать и анализировать работу синхронного RS-триггера используя логические элементы “И-НЕ”
-<br><br></font></p>
-<img src="sync1.jpg">
-<p><font face="comic sans ms" size=+2 color=MidnightBlue>
-Проверим данную теоритическую модели с помощью программы Tina
-<br><br></font></p>
-<br>
-<font face="comic sans ms" size=+2 color=MidnightBlue>
-<b>Решение данной задачи имеет следующий вид:</b></font>
-<table align=center>
-<td valign=top><A HREF="JavaScript: if (num1>0) { num1=num1-1}; a1()">
-<img src="L.jpg"></A></td>
-<td>
-<div align="center">
-<A HREF="JavaScript: if (num1<gran1) { num1=num1+1}; a1()">
-<IMG SRC="phot_sync_notand/1.jpg" NAME="pic1" BORDER=1 ></a>
-<br>
-</div>
-</td>
-<td valign=top><A HREF="JavaScript: if (num1<gran1) { num1=num1+1}; a1()">
-<img src="R.jpg"></A></td>
-</table>
-
-<br>
-<br>
-<p align=left>
-<font face="comic sans ms" size=+3 color=Blue>
-<b>В третьем подпункте задачи №1</b>
-</font><br></p>
-  <p><font face="comic sans ms" size=+2 color=MidnightBlue>
-Мы будем собирать и анализировать работу синхронного асинхронного RS-триггера используя JK-микросхему
-<br><br></font></p>
-<img src="rsjk.jpg">
-<p><font face="comic sans ms" size=+2 color=MidnightBlue>
-Проверим данную теоритическую модели с помощью программы Tina
-<br><br></font></p>
-<br>
-<font face="comic sans ms" size=+2 color=MidnightBlue>
-<b>Решение данной задачи имеет следующий вид:</b></font>
-<table align=center>
-<td valign=top><A HREF="JavaScript: if (num2>0) { num2=num2-1}; a2()">
-<img src="L.jpg"></A></td>
-<td>
-<div align="center">
-<A HREF="JavaScript: if (num2<gran2) { num2=num2+1}; a2()">
-<IMG SRC="phot_async_jc/1.jpg" NAME="pic2" BORDER=1 ></a>
-<br>
-</div>
-</td>
-<td valign=top><A HREF="JavaScript: if (num2<gran2) { num2=num2+1}; a2()">
-<img src="R.jpg"></A></td>
-</table>
 
 </body>
 </html>
